@@ -30,7 +30,7 @@ namespace ClientAppDynamics
 				Console.WriteLine("Please enter a command.");
 				return false;
 			}
-			// Test if input arguments were supplied.
+			// Test if input arguments were supplied
 			if (args.Length > 2)
 			{
 				Console.WriteLine("Limit of commands over. Try with HELLO, TIME or DIR /path.");
