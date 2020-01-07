@@ -42,7 +42,7 @@ namespace ClientAppDynamics
 
         }
 
-        // ExecuteClient() Method 
+        // ExecuteClient() Method. Runs the client to establish a TCP/IP connection with a server.
         static void ExecuteClient(string[] args)
         {
             if (areValidArgs(args))
@@ -71,7 +71,7 @@ namespace ClientAppDynamics
                                     sender.RemoteEndPoint.ToString());
 
                         // Creation of messagge that we will send to Server
-                        byte[] messageSent = Encoding.ASCII.GetBytes(command + "<EOF>"); // EOF: End of file
+                        byte[] messageSent = Encoding.ASCII.GetBytes(command); 
                         int byteSent = sender.Send(messageSent);
 
                         // Data buffer 
